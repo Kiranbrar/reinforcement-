@@ -4,7 +4,7 @@
 # educational purposes provided that (1) you do not distribute or publish
 # solutions, (2) you retain this notice, and (3) you provide clear
 # attribution to UC Berkeley, including a link to http://ai.berkeley.edu.
-# 
+#
 # Attribution Information: The Pacman AI projects were developed at UC Berkeley.
 # The core projects and autograders were primarily created by John DeNero
 # (denero@cs.berkeley.edu) and Dan Klein (klein@cs.berkeley.edu).
@@ -25,14 +25,14 @@ def question2():
     return answerDiscount, answerNoise
 
 def question3a(): # changing living reward (prefers close)
-    answerDiscount = 0.9  
+    answerDiscount = 0.9
     answerNoise = 0.2
     answerLivingReward = -3
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 def question3b(): # changing discount, small discount prefers +1 or causes it to avoid cliffs?
-    answerDiscount = 0.3 
+    answerDiscount = 0.3
     answerNoise = 0.2
     answerLivingReward = -3
     return answerDiscount, answerNoise, answerLivingReward
@@ -45,7 +45,7 @@ def question3c(): # smaller discounts, want reward now
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
-def question3d(): # having a large living reward allows it to take long path, having large discount allows it to avoid cliff 
+def question3d(): # having a large living reward allows it to take long path, having large discount allows it to avoid cliff
     answerDiscount = 0.9
     answerNoise = 0.2
     answerLivingReward = .9
@@ -62,7 +62,7 @@ def question3e():
 def question8():
     answerEpsilon = None
     answerLearningRate = None
-    return answerEpsilon, answerLearningRate
+    return 'NOT POSSIBLE'
     # If not possible, return 'NOT POSSIBLE'
 
 if __name__ == '__main__':
